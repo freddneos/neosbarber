@@ -5,9 +5,9 @@ What you'll find here :
  - Sucrase  - ES7 , ES8 , ES9 sintaxe on nodejs
  - Nodemom - server and debugging
  - ESLint - code quality
- - Prettier - code quality
- - EditorConfig - normalize different editors
- - Sequelize ORM - migrations
+ - Prettier - code quality _and beauty_ :nail_care:
+ - EditorConfig - normalize differents editors
+ - Sequelize ORM - migrations , models and ORM things
  - Sequelize CLI - help on boring stuff
 
 
