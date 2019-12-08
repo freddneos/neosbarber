@@ -16,6 +16,7 @@ class User extends Model {
     );
 
     this.addHook('beforeSave', async user => {
+      console.log(user, 'BEFORE-SAVE');
       if (user.password && !user.password_hash) {
         console.log('password_hash not provided');
         user.password_hash = user.password;

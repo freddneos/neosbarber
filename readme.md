@@ -9,6 +9,7 @@ What you'll find here :
  - EditorConfig - normalize differents editors
  - Sequelize ORM - migrations , models and ORM things
  - Sequelize CLI - help on boring stuff
+ - Yup  - Schema validator
 
 
 ___
