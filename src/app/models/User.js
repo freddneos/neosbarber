@@ -16,6 +16,10 @@ class User extends Model {
     );
 
     this.addHook('beforeSave', async user => {
+      if (user.password && !user.password_hash) {
+        console.log('password_hash not provided');
+        user.password_hash = user.password;
+      }
       if (user.password_hash) {
         const hashedPass = await bcrypt.hash(user.password_hash, 8);
         user.password_hash = hashedPass;
@@ -23,6 +27,10 @@ class User extends Model {
     });
 
     return this;
+  }
+
+  checkPassword(password) {
+    return bcrypt.compare(password, this.password_hash);
   }
 }
 
