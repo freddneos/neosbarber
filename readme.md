@@ -10,6 +10,7 @@ What you'll find here :
  - Sequelize ORM - migrations , models and ORM things
  - Sequelize CLI - help on boring stuff
  - Yup  - Schema validator
+ - Multer - Multipart upload
 
 
 ___
